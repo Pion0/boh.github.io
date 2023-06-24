@@ -492,7 +492,7 @@
     width: 40px
 }
 
-.sosial-copy {
+.sosial-copy, .text-footer {
     padding: 0.5rem;
     margin: 0.1rem;
     font-weight: bold;
@@ -521,9 +521,13 @@
 /* Mhobile Phone */
 @media (max-width: 450px) {
 
+    html {
+        font-size: 15px;
+    }
+
     /* container-header */
     .container-logo .icon img {
-        width: 20px;
+        max-width: 20px;
     }
 
     .container-header .header-content {
@@ -539,7 +543,7 @@
     }
 
     .container-header .image img {
-        width: 320px;
+        max-width: 320px;
     }
 
 
@@ -581,6 +585,22 @@
     }
 
     /* section produk*/
+    .section-produk .fungsi-produk {
+        display: inline;
+        
+        
+    }
+
+    .fungsi-produk .price-harga {
+        padding: 0.5rem;
+        margin: 0.1rem;
+        grid-area: price;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: var(--box);
+    }
+
     .section-produk .des-produk {
         display: grid;
         grid-template-columns: repeat(auto-fit, 200px);
@@ -603,17 +623,54 @@
     }
 
     .bonus .bonus-img {
-        display: grid;
-        place-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    
 
     }
 
     .bonus .bonus-img img {
-    width: 320px;
-    border-radius: 20px;
-}
-    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 320px;
+        border-radius: 20px;
+    }
+    .bonus .bonus-img h4{
+        text-align: center;
+    }
+
+    .garansi {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .garansi-text h3 {
+        text-align: center;
+    }
+    .garansi-img img {
+        padding: 0.5rem;
+        margin: 0.1rem;
+        width: 150px
+    }
+
+
+    /* section testi */
+    .section-testi .marketing {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .marketing .marketing-text h4, .marketing .marketing-text p {
+        padding: 0.5rem;
+        margin: 2rem 0;
+    }
 
 
 
+    /* footer */
 }
