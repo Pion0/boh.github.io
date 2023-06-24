@@ -1,0 +1,622 @@
+:root {
+    --box: 1px solid rgba(0, 0, 0, 0.5);
+    --grey: #6d6d6d;
+    --ungu: #8718bc;
+    --salem: #f0aeb0;
+
+}
+
+
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+/* header content start */
+
+.container-logo {
+    background-color: var(--grey);
+    display: grid;
+    grid-template-areas:
+        'logoo iconn';
+    gap: 5px;
+
+}
+
+.container-logo .logo {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    grid-area: logoo;
+    display: flex;
+    align-items: center;
+
+}
+
+.container-logo .icon {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    grid-area: iconn;
+    display: flex;
+    justify-content: right;
+
+}
+
+.container-logo .icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.1rem;
+    max-width: 40px;
+
+}
+
+.container-logo .icon img {
+    width: 100%;
+}
+
+
+
+.container-header .header-content {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.container-header .content-text {
+    padding: 0.5rem;
+    margin: 0.1rem;
+
+}
+
+.content-text .text {
+    padding: 0.5rem;
+    margin: 0.1rem;
+
+}
+
+.content-text .btn-order {
+    display: flex;
+    align-items: center;
+}
+
+.content-text .btn-order a {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    border: 1px solid rgba(240, 174, 176, 1);
+    background-color: var(--ungu);
+}
+
+.container-header .image {
+    padding: 0.5rem;
+    margin: 0.1rem;
+
+}
+
+.container-header .image img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    border-radius: 5%;
+    width: 100%;
+}
+
+/* header content end */
+
+
+
+/* section masalah start */
+.section-masalah {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.text-1 {
+    padding: 0.5rem;
+    margin: 0.1rem;
+
+}
+
+.text-1 ul, .text-1 li {
+    padding: 0.5rem;
+    margin: 0.1rem;
+}
+
+.masalah-img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+
+}
+
+.masalah-img img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    border-radius: 5%;
+    width: 100%;
+}
+
+/* section masalah end */
+
+
+/* section edukasi start */
+.section-edukasi {
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.edukasi-1, .edukasi-2, .edukasi-3, .edukasi-4 {
+    border-radius: 5%;
+    background-color: var(--grey);
+    padding: 0.5rem;
+    margin: 0.1rem;
+    text-align: center;
+
+}
+
+/* section edukasi end */
+
+
+/* section produk start */
+.section-produk {
+    padding: 0.5rem;
+    margin: 0.1rem;
+
+}
+
+.section-produk .fungsi-produk {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas:
+        'img text '
+        'price price';
+
+}
+
+.fungsi-produk .img-produk {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    grid-area: img;
+
+}
+
+.fungsi-produk .img-produk img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    width: 100%;
+}
+
+.fungsi-produk .fungsi-text {
+    background-color: var(--grey);
+    padding: 0.5rem;
+    margin: 0.1rem;
+    grid-area: text;
+    border-radius: 10px;
+
+}
+
+.fungsi-produk .fungsi-text ul {
+    padding: 1rem;
+    margin: 0.1rem;
+
+}
+
+.fungsi-produk .fungsi-text li, .price-harga p {
+    padding: 0.5rem;
+    margin: 0.1rem;
+}
+
+.fungsi-produk .price-harga {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    grid-area: price;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fungsi-produk .price-harga a {
+
+    padding: 0.5rem;
+    margin: 0.1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    border: 3px solid rgba(240, 174, 176, 1);
+    background-color: var(--ungu);
+    border: var(--box);
+}
+
+
+
+.section-produk .des-produk {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    place-content: center;
+
+}
+
+.des-produk div {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    height: 250px;
+
+}
+
+.des-produk img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    width: 100%;
+    border-radius: 10px;
+    border: var(--box);
+}
+
+/* section produk end */
+
+
+/* section bonus start */
+
+.section-bonus .bonus {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.bonus .bonus-img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+
+}
+
+.bonus .bonus-img img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.bonus .bonus-text {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    background-color: var(--grey);
+    border-radius: 10px;
+}
+
+.bonus ul, .bonus li {
+    padding: 0.5rem;
+    margin: 0.1rem;
+}
+
+.bonus h3 {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    text-align: center;
+}
+
+
+.garansi {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.garansi-text {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    background-color: var(--grey);
+    border-radius: 10px;
+}
+
+.garansi-text h3 {
+    padding: 0.5rem;
+    margin: 0.1rem;
+}
+
+.garansi-img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.garansi-img img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    width: 60%;
+}
+
+/* section bonus end */
+
+
+/* section testi start */
+.section-testi {
+    padding: 0.5rem;
+    margin: 0.1rem;
+}
+
+.section-testi .testi {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.testi-text {
+    padding: 0.5rem;
+    margin: 0.1rem;
+
+}
+
+.section-testi .testi-img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    place-content: center;
+    place-items: center;
+}
+
+.testi-img div {
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 0.1rem;
+}
+
+.testi-img img {
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 0.1rem;
+    width: 100%;
+}
+
+.section-testi h3, .section-testi h5 {
+    text-align: center;
+}
+
+
+.section-testi .marketing {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.marketing .marketing-text h4, .marketing .marketing-text p {
+    padding: 0.5rem;
+    margin: 0.1rem;
+}
+
+.marketing .marketing-text {
+    padding: 0.5rem;
+    margin: 0.1rem;
+}
+
+.marketing .marketing-img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+}
+
+.marketing .marketing-img img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    width: 100%;
+}
+
+.marketing .price-harga {
+    grid-area: price;
+    text-align: center;
+}
+
+.marketing .price-harga a {
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    border: 3px solid rgba(240, 174, 176, 1);
+    background-color: var(--ungu);
+    border: var(--box);
+}
+
+/* section testi end */
+
+
+
+/* section edukasi start */
+.edukasi {
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    background-color: var(--ungu);
+    border: var(--box);
+    text-align: center;
+}
+
+.edukasi h4, .edukasi p {
+    padding: 0.5rem;
+    margin: 0.1rem;
+
+}
+
+/* section edukasi end */
+
+
+/* footer start */
+.footer {
+    background-color: var(--grey);
+    display: block;
+}
+
+.sosial-media {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosial-media a img {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    width: 40px
+}
+
+.sosial-copy {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+/* media query */
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+/* Mhobile Phone */
+@media (max-width: 450px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    /* container-header */
+    .container-logo .icon img {
+        width: 11px;
+    }
+
+    .container-header .header-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-content .content-text .text, .header-content .content-text .btn-order, .container-header .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-header .image img {
+        width: 320px;
+    }
+
+
+    /* section-masalah*/
+    .section-masalah {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-masalah .text-1 {
+        text-align: center;
+    }
+
+    .section-masalah .masalah-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-masalah .masalah-img img {
+        width: 320px;
+    }
+
+    ::marker {
+        color: white;
+    }
+
+    /* section edukasi */
+    .section-edukasi {
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .edukasi-1, .edukasi-2, .edukasi-3, .edukasi-4 {
+        width: 320px;
+    }
+
+    /* section produk*/
+    .section-produk .des-produk {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 148px);
+        place-content: center;
+    }
+
+    .des-produk div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* section bonus */
+    .section-bonus .bonus {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-content: center;
+
+    }
+
+    .bonus .bonus-img {
+        display: grid;
+        place-self: center;
+
+    }
+
+    .bonus .bonus-img img {
+    width: 320px;
+    border-radius: 20px;
+}
+    
+
+
+
+}
